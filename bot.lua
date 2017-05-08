@@ -182,7 +182,7 @@ end
 bot_run()
 
 while startbot do
-	//local res = bot_updates(last_update+1)
+	local res = bot_updates(last_update+1)
 	if res then
 		for i,v in ipairs(res.result) do
 			last_update = v.update_id
